@@ -157,30 +157,7 @@
         flex-wrap: wrap;
         width: 100%;
         flex-wrap: wrap;
-        // .card {
-        //   background: #2c2c38;
-        //   padding: 30px;
-        //   max-width: 31.33%;
-        //   display: flex;
-        //   flex: 0 0 33.33%;
-        //   flex-direction: column;
-          
-        //   margin-bottom: 15px;
-        // }
-        // .card__caption {
-        //   color: #8c8c8e;
-        //   font-size: 12px;
-        //   font-family: "Poppins", sans-serif;
-        //   font-weight: 300;
-        //   letter-spacing: 0.5px;
-        // }
-        // .card__tittle {
-        //   font-size: 14px;
-        //   font-weight: 600;
-        //   color: #fafafc;
-        //   margin-bottom: 15px;
-        //   font-family: "Poppins", sans-serif;
-        // }
+      
       }
       h1 {
         color: #fafafc;
@@ -218,42 +195,7 @@
       display: flex;
       flex-wrap: wrap;
       width: 100%;
-      .card__holders {
-        margin-top: 30px;
-        display: flex;
-
-        .card {
-          background: #2c2c38;
-          padding: 30px;
-          max-width: 31.33%;
-          display: flex;
-          flex: 0 0 33.33%;
-          flex-direction: column;
-          margin: auto;
-          margin-bottom: 15px;
-          .card__tittle {
-            font-size: 14px;
-            font-weight: 600;
-            color: #fafafc;
-            margin-bottom: 0;
-            font-family: "Poppins", sans-serif;
-          }
-          .card__subtittle {
-            color: #bbbbbb;
-            font-size: 13px;
-            font-family: "Poppins", sans-serif;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-          }
-          .card__caption {
-            color: #8c8c8e;
-            font-size: 12px;
-            font-family: "Poppins", sans-serif;
-            font-weight: 300;
-            letter-spacing: 0.5px;
-          }
-        }
-      }
+     
     }
     .education__container_parent {
       display: flex;
