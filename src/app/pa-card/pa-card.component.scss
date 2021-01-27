@@ -1,0 +1,24 @@
+
+    .card {
+      background: #2c2c38;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      margin: 15px;
+    }
+    .card__caption {
+      color: #8c8c8e;
+      font-size: 12px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+    }
+    .card__tittle {
+      font-size: 14px;
+      font-weight: 600;
+      color: #fafafc;
+      margin-bottom: 15px;
+      font-family: "Poppins", sans-serif;
+    }
+  

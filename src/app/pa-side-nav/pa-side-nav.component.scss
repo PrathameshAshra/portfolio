@@ -1,0 +1,121 @@
+.myProfile {
+    color: white;
+    z-index: 9999;
+    width: 100%;
+    padding: 30px;
+    height: 235px;
+    background: linear-gradient(
+      159deg,
+      rgba(37, 37, 50, 0.98) 0%,
+      rgba(35, 35, 45, 0.98) 100%
+    );
+    text-align: center;
+    // -webkit-box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+    // box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+    p {
+      margin: 0px;
+      padding: 0px;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    span {
+      margin-top: 5px;
+      padding: 0px;
+      font-family: "Poppins", sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      display: block;
+      color: #8c8c8e;
+    }
+    .imageContainer {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto;
+      border-radius: 50%;
+      position: relative;
+      margin-bottom: 15px;
+      img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 50%;
+        z-index: 0;
+      }
+    }
+  }
+  .mySkill {
+    padding: 15px;
+    height: calc(100% - 285px);
+    overflow: auto;
+    .age__container {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #646466;
+      .name {
+        font-size: 12px;
+        font-weight: 400;
+        color: #fafafc;
+        margin-bottom: 0;
+        font-family: "Poppins", sans-serif;
+        p {
+          padding: 2px;
+          margin: 0px;
+        }
+      }
+      .value {
+        color: #8c8c8e;
+        font-size: 12px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        margin-bottom: 0;
+        letter-spacing: 0.5px;
+        p {
+          padding: 2px;
+          margin: 0px;
+        }
+      }
+    }
+    .skill__container {
+      display: flex;
+      flex-direction: column;
+      .check {
+        display: flex;
+        color: white;
+        margin-top: 5px;
+        justify-content: space-between;
+        img {
+          width: 20px;
+          font-size: 11px;
+          color: #8c8c8e !important;
+        }
+        p {
+          color: #fafafc;
+          /* margin-bottom: 0; */
+          font-family: "Poppins", sans-serif;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .bottom__container {
+    display: flex;
+    height: 50px;
+    padding: 15px;
+    background: linear-gradient(
+      159deg,
+      rgba(37, 37, 50, 0.98) 0%,
+      rgba(35, 35, 45, 0.98) 100%
+    );
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .shareLink_container {
+      img {
+        width: 25px;
+      }
+    }
+  }

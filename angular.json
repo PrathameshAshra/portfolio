@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "myPort"
+  "defaultProject": "myPort",
+  "cli": {
+    "analytics": "ca600c1c-b9d4-4ccf-b738-37fb15405446"
+  }
 }

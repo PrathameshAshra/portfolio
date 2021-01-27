@@ -1,0 +1,48 @@
+<div class="myProfile">
+    <div class="imageContainer">
+      <img src="https://randomuser.me/api/portraits/men/29.jpg" alt="" />
+    </div>
+    <p class="myName">Prathamesh Ashra</p>
+    <span class="mytags"> Full Stack Developer </span>
+  </div>
+  <div class="mySkill">
+    <div class="age__container">
+      <div class="name">
+        <p>Residence:</p>
+        <p>City</p>
+        <p>Age:</p>
+      </div>
+      <div class="value">
+        <p>India</p>
+        <p>Mumbai</p>
+        <p>24</p>
+      </div>
+    </div>
+    <div class="skill__container">
+      <div class="check">
+        <img src="../../../assets/icons8-angularjs.svg" alt="" />
+        <p>Angular</p>
+      </div>
+      <div class="check">
+        <img src="../../../assets/icons8-react-native.svg" alt="" />
+        <p>Native</p>
+      </div>
+      <div class="check">
+        <img src="../../../assets/icons8-vuejs.svg" alt="" />
+        <p>Vue</p>
+      </div>
+      <div class="check">
+        <img src="../../../assets/icons8-django.svg" alt="" />
+        <p>Django</p>
+      </div>
+      <div class="check">
+        <img src="../../../assets/icons8-c-sharp-logo.svg" alt="" />
+        <p>C Sharp</p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom__container">
+    <div class="shareLink_container" *ngFor="let item of shareLink">
+      <img src="{{item}}" alt="">
+    </div>
+  </div>

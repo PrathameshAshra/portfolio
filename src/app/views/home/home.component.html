@@ -1,0 +1,359 @@
+<div class="container-fluid">
+  <div class="row myRow h100">
+    <div class="col-md-3 col-lg-2 left__container d-none d-md-block">
+      <app-pa-side-nav></app-pa-side-nav>
+    </div>
+    <div class="col-sm-12 text-right d-md-none">
+      <i class="fas fa-bars" (click)="toggleMenu = !toggleMenu"></i>
+    </div>
+    <div class="col-md-9 col-lg-10 col-sm-12 p-0 h100 a">
+      
+      <div class="right__container">
+      
+        <div class="homePage__headerContainer">
+          <div class="textHeader">
+            <p>
+              Inside every large program, there is a program trying to get out.
+            </p>
+            <h6><code>Java is to JavaScript what Car is to Carpet. </code></h6>
+          </div>
+          <div class="imgHeader">
+            <img
+              src="https://elanta.app/nazar/arter-demo/img/face-2.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="exp__center__container">
+          <div class="exp_center col-sm-6 col-md-3">
+            <span class="tittle">2+</span>
+            <span class="subTittle">Years Experience </span>
+          </div>
+          <div class="exp_center col-sm-6 col-md-3">
+            <span class="tittle">13+</span>
+            <span class="subTittle">Completed Projects </span>
+          </div>
+          <div class="exp_center col-sm-6 col-md-3">
+            <span class="tittle"> 10 +</span>
+            <span class="subTittle">Happy Customers </span>
+          </div>
+          <div class="exp_center col-sm-6 col-md-3">
+            <span class="tittle">20+ </span>
+            <span class="subTittle">Podcasts </span>
+          </div>
+        </div>
+        <div class="myServiceContainer">
+          <h1>My Services</h1>
+          <div class="card__holders">
+            <app-pa-card
+              [cardValue]="item"
+              class="col-md-4 col-sm-12"
+              *ngFor="let item of myService"
+            ></app-pa-card>
+          </div>
+        </div>
+        <h1 class="PricingPlans">Price Plans</h1>
+
+        <div class="myPricingContainer">
+          <app-pa-pricing
+            [priceValue]="item"
+            class="col-md-4 col-12"
+            *ngFor="let item of myPricing"
+          ></app-pa-pricing>
+        </div>
+        <h1 class="Recommendations">Recommendations</h1>
+        <div class="recomandationContainer">
+          <app-pa-card
+            [cardValue]="item"
+            class="col-md-4 col-sm-12"
+            *ngFor="let item of myRecommandation"
+          ></app-pa-card>
+
+          <!-- <div class="card__holders">
+            <div class="card">
+              <p class="card__tittle">
+                Bhumika Shah
+              </p>
+              <p class="card__subtittle">
+                Web Development
+              </p>
+              <span class="card__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse
+                commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</span>
+            </div>
+            <div class="card">
+              <p class="card__tittle">
+                Bhumika Shah
+              </p>
+              <p class="card__subtittle">
+                Web Development
+              </p>
+              <span class="card__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse
+                commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</span>
+            </div>
+            <div class="card">
+              <p class="card__tittle">
+                Bhumika Shah
+              </p>
+              <p class="card__subtittle">
+                Web Development
+              </p>
+              <span class="card__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse
+                commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</span>
+            </div>
+
+
+
+
+          </div> -->
+        </div>
+        <div class="education__container_parent row">
+          <div class="education__container col-md-6 col-12 col-sm-12">
+            <h1 class="Recommendations mb-3">Education</h1>
+            <div class="myadacadmic">
+              <div class="card">
+                <div class="toprow">
+                  <div class="left">
+                    <h1>Bachelor's in Information Technology</h1>
+                    <h3>Mumbai University</h3>
+                  </div>
+                  <div class="right">
+                    <span> 2017 - 2019 </span>
+                  </div>
+                </div>
+                <div class="middleRow">
+                  <span>
+                    This is in contrast to a Bachelor of Science in Information
+                    Technology which is a bachelor's degree typically conferred
+                    after a period of three years of an undergraduate course of
+                    study in Information Technology (IT).
+                  </span>
+                </div>
+              </div>
+              <div class="pointer"></div>
+              <div class="myborder"></div>
+            </div>
+            <div class="myadacadmic">
+              <div class="card">
+                <div class="toprow">
+                  <div class="left">
+                    <h1>Full Stack Developer Course</h1>
+                    <h3>Udemy</h3>
+                  </div>
+                  <div class="right">
+                    <span> 2019 - 2019 </span>
+                  </div>
+                </div>
+                <div class="middleRow">
+                  <span
+                    >The course thought to develop both client and server
+                    software. In addition to mastering HTML and CSS, I also
+                    knows how to: Program a browser and cli tools
+                  </span>
+                </div>
+              </div>
+              <div class="pointer"></div>
+            </div>
+          </div>
+          <div class="education__container col-md-6 col-12 col-sm-12">
+            <h1 class="Recommendations mb-3">Work Exp</h1>
+            <div class="myadacadmic">
+              <div class="card">
+                <div class="toprow">
+                  <div class="left">
+                    <h1>SVA</h1>
+                    <h3>Team Project</h3>
+                  </div>
+                  <div class="right">
+                    <span> 2020 </span>
+                  </div>
+                </div>
+                <div class="middleRow">
+                  <span>
+                    Sva is a Mobile Application that will cater to mental health
+                    related issues in india as well as assist users with
+                    physical health related issues.
+                  </span>
+                </div>
+              </div>
+              <div class="pointer"></div>
+              <div class="myborder"></div>
+            </div>
+            <div class="myadacadmic">
+              <div class="card">
+                <div class="toprow">
+                  <div class="left">
+                    <h1>Tratwo</h1>
+                    <h3>Team Project</h3>
+                  </div>
+                  <div class="right">
+                    <span> 2019 </span>
+                  </div>
+                </div>
+                <div class="middleRow">
+                  <span>
+                    Tratwo is an Travel Agency related online portal where users
+                    can buy flight tickets directly along with existing users in
+                    B2B industry
+                  </span>
+                </div>
+              </div>
+              <div class="pointer"></div>
+              <div class="myborder"></div>
+            </div>
+            <div class="myadacadmic">
+              <div class="card">
+                <div class="toprow">
+                  <div class="left">
+                    <h1>Lead Management System</h1>
+                    <h3>Prathamesh Ashra (solo)</h3>
+                  </div>
+                  <div class="right">
+                    <span>2018 - 2019 </span>
+                  </div>
+                </div>
+                <div class="middleRow">
+                  <span>
+                    Simple and Easy to use CRM for your entire team. Use cloud
+                    version or install in-premise. Free version available.
+                    Services: CRM, Time Cards, Issue Tracking, Online Tours,
+                    Video Tours, Developer Tool Kits.
+                  </span>
+                </div>
+              </div>
+              <div class="pointer"></div>
+              <div class="myborder"></div>
+            </div>
+            <div class="myadacadmic">
+              <div class="card">
+                <div class="toprow">
+                  <div class="left">
+                    <h1>MercerMellor</h1>
+                    <h3>Team Project</h3>
+                  </div>
+                  <div class="right">
+                    <span>2019 </span>
+                  </div>
+                </div>
+                <div class="middleRow">
+                  <span>
+                    Online E-comm portal to sell their official lethes
+                    merchandise, increased their online presence from nothing to
+                    worldwide into B2C industry
+                  </span>
+                </div>
+              </div>
+              <div class="pointer"></div>
+            </div>
+          </div>
+        </div>
+        <h1 class="Recommendations">Contact information</h1>
+        <div class="ContactInformationContainer">
+          <div class="card__holders row">
+            <div class="card col-md-4 col-sm-12 col-12">
+              <div class="d-flex justify-content-space-between">
+                <p class="card__tittle">Country</p>
+                <p class="card__caption">India</p>
+              </div>
+              <div class="d-flex justify-content-space-between">
+                <p class="card__tittle">City</p>
+                <p class="card__caption">Mumbai</p>
+              </div>
+              <div class="d-flex justify-content-space-between">
+                <p class="card__tittle">Street</p>
+                <p class="card__caption">Mira Road</p>
+              </div>
+            </div>
+            <div class="card col-md-4 col-sm-12 col-12">
+              <div class="d-flex justify-content-space-between">
+                <p class="card__tittle">Email</p>
+                <p class="card__caption">prathameshedu@gmail.com</p>
+              </div>
+              <div class="d-flex justify-content-space-between">
+                <p class="card__tittle">Whatsapp</p>
+                <p class="card__caption">+91 9833398545</p>
+              </div>
+              <div class="d-flex justify-content-space-between">
+                <p class="card__tittle">Skype</p>
+                <p class="card__caption">prathameshAshra</p>
+              </div>
+            </div>
+            <div class="card col-md-4 col-sm-12 col-12">
+              <div class="d-flex justify-content-space-between">
+                <p class="card__tittle">Support</p>
+                <p class="card__caption">+91 7977778189</p>
+              </div>
+              <div class="d-flex justify-content-space-between">
+                <p class="card__tittle">Office</p>
+                <p class="card__caption">+91 983398545</p>
+              </div>
+              <div class="d-flex justify-content-space-between">
+                <p class="card__tittle">Personal</p>
+                <p class="card__caption">+91 856669874</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="Recommendations">Get In Touch</h1>
+        <div class="getInTouchContainer">
+          <form id="form" class="art-contact-form">
+            <!-- form field -->
+            <div class="art-form-field">
+              <!-- name input -->
+              <input
+                id="name"
+                name="name"
+                class="art-input"
+                type="text"
+                placeholder="Name"
+                required=""
+              />
+              <!-- label -->
+              <label for="name"><i class="fas fa-user"></i></label>
+            </div>
+            <!-- form field end -->
+            <!-- form field -->
+            <div class="art-form-field">
+              <!-- email input -->
+              <input
+                id="email"
+                name="email"
+                class="art-input"
+                type="email"
+                placeholder="Email"
+                required=""
+              />
+              <!-- label -->
+              <label for="email"><i class="fas fa-at"></i></label>
+            </div>
+            <!-- form field end -->
+            <!-- form field -->
+            <div class="art-form-field">
+              <!-- message textarea -->
+              <textarea
+                id="message"
+                name="text"
+                class="art-input"
+                placeholder="Message"
+                required=""
+              ></textarea>
+              <!-- label -->
+              <label for="message"><i class="far fa-envelope"></i></label>
+            </div>
+            <!-- form field end -->
+            <!-- button -->
+            <div class="art-submit-frame">
+              <button class="art-btn art-btn-md art-submit" type="submit">
+                <span>Send message</span>
+              </button>
+              <!-- success -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="sideNav col-8"[ngClass]="{'animateIn': toggleMenu, 'animateOut': !toggleMenu}" *ngIf="toggleMenu">
+  <app-pa-side-nav></app-pa-side-nav>
+</div>
